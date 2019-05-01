@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.2;
 }
 ol, ul {
 	list-style: none;
@@ -56,4 +56,137 @@ table {
 html, body {
 	height: 100%;
 }
+// variables
 
+//color palette:
+@color1: #a2b9bc;
+@color2:#b2ad7f;
+@color3:#878f99;
+@color4:#6b5b95;
+@color5:white;
+//font size
+@small-font: 1.2em;
+@medium-font:1.4em;
+@large-font:1.8em;
+@x-large-font: 2.25em;
+
+//Mixins
+.headed{
+	font-size: @medium-font;
+	line-height:2;
+}
+.tabled{
+	// border: 1px solid @color4;
+	border-collapse: collapse;
+	background-color: @color3;
+
+}
+.centered{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.container{
+	width:900px;
+	color: @color4;
+	header{
+		nav{
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			background-color: @color1;
+			
+			a{
+				text-decoration: none;
+				padding: 1.5%;
+				color: @color4;
+				font-size:@small-font;
+			}
+		}
+	}
+
+	.top-content{
+		background-color: @color3;
+		width: 805px;
+		margin: 5%;
+		padding: 20px;
+		height: 400px;
+		display: flex;
+		position: relative;
+
+		h1{
+			font-size: @x-large-font;
+			padding: 10px;
+		}
+		h2{
+			font-size:@large-font;
+		}
+		p{
+			font-size:@medium-font;
+		}
+		div{
+			padding: 20px;
+			text-align: center;
+			position: absolute;
+			top: 20%;
+			right: 5%;
+			color: @color5;
+		}
+
+	}
+	.main-content{
+		background-color: @color1;
+		font-size: @small-font;
+
+		.columns{
+			display: flex;
+			justify-content: space-around;
+		}
+		.short-about, .skills{
+			padding:20px 45px;
+			width: 48%;
+
+		}
+		h2{
+			.headed();
+		}
+		.work-history{
+			text-align: center;
+			padding-bottom: 50px;
+
+
+			table{
+				width: 500px;
+				margin:0 200px;
+			}
+
+			table, th, td{
+				.tabled();
+			}
+			th{
+				line-height: 1.5;
+				font-weight: bold;
+
+			}
+		}
+	}
+	footer{
+		margin-top: 45px;
+		background-color: @color3;
+		padding: 45px;
+		color: @color5;
+		font-size: @small-font;
+
+		h3{
+			text-decoration: underline;
+		}
+		p{
+			padding-left: 10px;
+		}
+	}
+	@media (max-width:500px){
+
+	}
+}

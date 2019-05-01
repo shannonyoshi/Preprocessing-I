@@ -105,7 +105,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1.2;
 }
 ol,
 ul {
@@ -133,4 +133,108 @@ table {
 html,
 body {
   height: 100%;
+}
+.headed {
+  font-size: 1.4em;
+  line-height: 2;
+}
+.tabled {
+  border-collapse: collapse;
+  background-color: #878f99;
+}
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  width: 900px;
+  color: #6b5b95;
+}
+.container header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #a2b9bc;
+}
+.container header nav a {
+  text-decoration: none;
+  padding: 1.5%;
+  color: #6b5b95;
+  font-size: 1.2em;
+}
+.container .top-content {
+  background-color: #878f99;
+  width: 805px;
+  margin: 5%;
+  padding: 20px;
+  height: 400px;
+  display: flex;
+  position: relative;
+}
+.container .top-content h1 {
+  font-size: 2.25em;
+  padding: 10px;
+}
+.container .top-content h2 {
+  font-size: 1.8em;
+}
+.container .top-content p {
+  font-size: 1.4em;
+}
+.container .top-content div {
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  color: white;
+}
+.container .main-content {
+  background-color: #a2b9bc;
+  font-size: 1.2em;
+}
+.container .main-content .columns {
+  display: flex;
+  justify-content: space-around;
+}
+.container .main-content .short-about,
+.container .main-content .skills {
+  padding: 20px 45px;
+  width: 48%;
+}
+.container .main-content h2 {
+  font-size: 1.4em;
+  line-height: 2;
+}
+.container .main-content .work-history {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.container .main-content .work-history table {
+  width: 500px;
+  margin: 0 200px;
+}
+.container .main-content .work-history table,
+.container .main-content .work-history th,
+.container .main-content .work-history td {
+  border-collapse: collapse;
+  background-color: #878f99;
+}
+.container .main-content .work-history th {
+  line-height: 1.5;
+  font-weight: bold;
+}
+.container footer {
+  margin-top: 45px;
+  background-color: #878f99;
+  padding: 45px;
+  color: white;
+  font-size: 1.2em;
+}
+.container footer h3 {
+  text-decoration: underline;
+}
+.container footer p {
+  padding-left: 10px;
 }
