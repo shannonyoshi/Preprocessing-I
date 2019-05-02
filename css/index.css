@@ -238,3 +238,37 @@ body {
 .container footer p {
   padding-left: 10px;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+    margin: auto;
+  }
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .container header nav a {
+    width: 100%;
+    border-bottom: 1px solid #6b5b95;
+    text-align: center;
+  }
+  .container .top-content {
+    width: 400px;
+    display: block;
+    height: 800px;
+    margin: 30px auto;
+  }
+  .container .top-content div {
+    position: relative;
+  }
+  .container .main-content .columns {
+    display: block;
+  }
+  .container .main-content .short-about,
+  .container .main-content .skills {
+    width: 100%;
+  }
+  .container .main-content table {
+    margin: 0 !important;
+  }
+}

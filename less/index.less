@@ -187,6 +187,36 @@ html, body {
 		}
 	}
 	@media (max-width:500px){
-
+		width: 500px;
+		margin: auto;
+		header nav{
+			display: flex;
+			flex-direction: column;
+			a {
+				width: 100%;
+				border-bottom: 1px solid @color4;
+				text-align: center;
+			}
+		}	
+		.top-content{
+			width: 400px;
+			display: block;
+			height:800px;
+			margin: 30px auto;
+			div{
+				position: relative;
+			}
+		}
+		.main-content{
+			.columns{
+				display: block;
+			}
+			.short-about, .skills{
+				width: 100%
+			}
+			table{
+				margin: 0 !important;
+			}
+		}
 	}
 }
