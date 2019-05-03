@@ -1,1 +1,274 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.2;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.headed {
+  font-size: 1.4em;
+  line-height: 2;
+}
+.tabled {
+  border-collapse: collapse;
+  background-color: #878f99;
+}
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  width: 900px;
+  color: #6b5b95;
+}
+.container header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #a2b9bc;
+}
+.container header nav a {
+  text-decoration: none;
+  padding: 1.5%;
+  color: #6b5b95;
+  font-size: 1.2em;
+}
+.container .top-content {
+  background-color: #878f99;
+  width: 805px;
+  margin: 5%;
+  padding: 20px;
+  height: 400px;
+  display: flex;
+  position: relative;
+}
+.container .top-content h1 {
+  font-size: 2.25em;
+  padding: 10px;
+}
+.container .top-content h2 {
+  font-size: 1.8em;
+}
+.container .top-content p {
+  font-size: 1.4em;
+}
+.container .top-content div {
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  color: white;
+}
+.container .main-content {
+  background-color: #a2b9bc;
+  font-size: 1.2em;
+}
+.container .main-content .columns {
+  display: flex;
+  justify-content: space-around;
+}
+.container .main-content .short-about,
+.container .main-content .skills {
+  padding: 20px 45px;
+  width: 48%;
+}
+.container .main-content h2 {
+  font-size: 1.4em;
+  line-height: 2;
+}
+.container .main-content .work-history {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.container .main-content .work-history table {
+  width: 500px;
+  margin: 0 200px;
+}
+.container .main-content .work-history table,
+.container .main-content .work-history th,
+.container .main-content .work-history td {
+  border-collapse: collapse;
+  background-color: #878f99;
+}
+.container .main-content .work-history th {
+  line-height: 1.5;
+  font-weight: bold;
+}
+.container footer {
+  margin-top: 45px;
+  background-color: #878f99;
+  padding: 45px;
+  color: white;
+  font-size: 1.2em;
+}
+.container footer h3 {
+  text-decoration: underline;
+}
+.container footer p {
+  padding-left: 10px;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+    margin: auto;
+  }
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .container header nav a {
+    width: 100%;
+    border-bottom: 1px solid #6b5b95;
+    text-align: center;
+  }
+  .container .top-content {
+    width: 400px;
+    display: block;
+    height: 800px;
+    margin: 30px auto;
+  }
+  .container .top-content div {
+    position: relative;
+  }
+  .container .main-content .columns {
+    display: block;
+  }
+  .container .main-content .short-about,
+  .container .main-content .skills {
+    width: 100%;
+  }
+  .container .main-content table {
+    margin: 0 !important;
+  }
+}
